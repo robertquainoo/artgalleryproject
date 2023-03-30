@@ -1,0 +1,492 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap');
+
+body{
+  background-color: #151515;
+}
+
+/* components */
+
+/* bth */
+
+.bth{
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+  width: fit-content;
+  letter-spacing: 1.5px;
+}
+
+.rev{
+  grid-template-columns: 0.3fr 1fr;
+}
+
+.bth > .bth-text {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  background-color: #151515;
+
+}
+
+.bth > span:not(.bth-text){
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#D5966C;
+}
+
+.bth:hover > .bth-text{
+  background-color:#D5966C;
+}
+
+.bth:hover > span:not(.bth-text){
+  background-color:#151515;
+}
+
+.map{
+  position: relative;
+  width: 100%;
+}
+
+.map > picture > img{
+  width: 100%;
+}
+
+.map > .bth{
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+/* address */
+
+.address{
+  padding-block: 64px;
+}
+
+.address > div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.address > div > article{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.address > div > article > p:last-of-type{
+  max-width: 28ch;
+}
+
+/* address section responsiveness */
+
+/* tablet */
+
+@media (min-width: 600px){
+  .address{
+    padding-block:96px ;
+  }
+
+  .address > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .address > div > article > p:last-of-type{
+    max-width: 34ch !important;
+  }
+
+  .address > div > h1{
+    max-width: 10ch;
+  }
+}
+
+/* desktop */
+
+@media (min-width: 1000px){
+  .address > div > article > p:last-of-type{
+    max-width: 30ch;
+  }
+}
+
+
+
+/* address section */
+
+/* footer section */
+
+.footer-section{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /* padding: 48px; */
+  padding-block: 64px ;
+}
+
+.footer-section > ul{
+  display: flex;
+  gap: 32px;
+}
+
+.footer-section > ul > li > a > img{
+  filter: brightness(0) !important;
+}
+
+.footer-section > ul > li:hover > a > img{
+  filter: brightness(300%) !important;
+}
+
+.footer-section  > p {
+  max-width: 30ch;
+}
+
+/* footer section responsiveness */
+
+/* tablet */
+
+@media (min-width: 600px){
+  .footer-section{
+    flex-direction: row;
+    gap:5px;
+    justify-content: space-between;
+  }
+
+  .footer-section  > p {
+    max-width: 25ch;
+    right:35%;
+    position:absolute;
+  }
+
+.footer-section  > ul {
+right:10%;
+position:absolute;
+  }
+}
+
+/* desktop */
+
+@media (min-width: 1000px){
+  .footer-section  > p {
+    max-width: 37ch;
+right:35%;
+position:absolute;
+  }
+
+.footer-section  > ul {
+right:15%;
+position:absolute;
+  }
+}
+
+
+
+/* ------------- */
+/* Reset         */
+/* ------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset Margins    */
+
+body,
+h1,
+h2,
+h3,
+p,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+  font-weight:900;
+}
+
+p,
+span {
+  font-weight: 900;
+}
+
+/* Remove list styles on ul, ol elements with a list role,
+ which suggests default styling will be removed */
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Set core root defaults */
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: normal;
+  font-family: "Times New Roman";
+  font-size: inherit;
+  background-color: #ffffff;
+  color: #444444;
+  /* to strech out elements */
+  display: grid;
+}
+
+/* Make images easier to work with */
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------- */
+/* Utility Classes  */
+/* ------------- */
+
+.main-body {
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  row-gap: 8rem;
+}
+
+.container{
+  padding-inline: 1em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* colors */
+
+.text-light{
+  color: #ffffff;
+}
+
+.text-accent{
+  color: #d5966c;
+}
+
+.text-dark{
+  color: #151515;
+}
+
+.text-nuetral{
+  color: #444444;
+}
+
+/* background color */
+
+.background-light{
+  background-color: #ffffff;
+}
+
+.background-accent{
+  background-color: #d5966c;
+}
+
+.background-dark{
+  background-color: #151515;
+}
+
+.background-nuetral{
+  background-color: #444444;
+}
+
+/* typography */
+
+/* font family */
+
+.fontfamily-primary{
+  font-family: 'Big Shoulders Display';
+}
+
+.fontfamily-secondary{
+  font-family: 'Outfit';
+}
+
+/* font size */
+
+.fontsize-primary-heading{
+  font-size: 60px;
+}
+
+.fontsize-secondary-heading{
+  font-size: 50px;
+}
+
+.fontsize-location-heading{
+  font-size: 50px;
+}
+
+.fontsize-location-sub{
+  font-size: 30px;
+}
+
+.fontsize-body{
+  font-size: 18px;
+}
+
+.fontsize-bth{
+  font-size: 20px;
+}
+
+.fontsize-footer-body{
+  font-size: 16px;
+}
+
+.fontsize-logo{
+  font-size: 30px;
+}
+
+/* line height */
+
+.lineheight-primary-heading{
+  line-height: 56px;
+}
+
+.lineheight-secondary-heading{
+  line-height: 50px;
+}
+
+.lineheight-location-heading{
+  line-height: 45px;
+}
+
+.lineheight-location-sub{
+  line-height: 36px;
+}
+
+.lineheight-body{
+  line-height: 28px;
+}
+
+.lineheight-bth{
+  line-height: 24px;
+}
+
+.lineheight-footer-body{
+  line-height: 26px;
+}
+
+.lineheight-logo{
+  line-height: 32px;
+}
+
+/* font weight */
+
+.fontweight-300{
+  font-weight:900;
+}
+
+.fontweight-200{
+  font-weight: 800;
+}
+
+.fontweight-100{
+  font-weight: 300;
+}
+
+/* responsiveness */
+
+/* tablet */
+
+@media (min-width: 600px){
+  .container{
+    padding-inline: 32px;
+  }
+
+}
+
+/* desktop */
+
+@media (min-width: 1000px){
+  .container{
+    padding-inline: 20px;
+  }*/
+
+.footer-section {
+    display: flex;
+    flex-direction:row;
+    padding-block:1000px;
+ padding-inline: 80em;
+  margin-inline: auto;
+  max-width: 80rem;
+*/
+}
+
+
+
+}
+
+.footer-section {
+    display: flex;
+    flex-direction:column;
+  
+    
+}
+
+.footer-section > ul {
+    display: flex;
+    gap: 2rem;
+}
