@@ -29,6 +29,10 @@ position:relative;
 }
 
 @media  (max-width:680px) {
+    
+main{
+    margin:-4px;  
+      }    
 .arrow-right-1 {
 width:9px;
 height:27px;
