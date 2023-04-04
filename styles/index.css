@@ -1,37 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap');
 
 
-a.ol span.ol-text {
-    display: inline-block; 
-    color: #fff;   
-    background-color: #151515;  
-}
-
-a.ol span.ol-icon {
-    background-color: #d5966c;  
-}
-
-a.ol:hover span {
-    transition-property: background-color; 
-    transition-duration: 200ms;  
-}
-
-a.ol:hover span.ol-text {
-    background-color: #d5966c;  
-}
-
-a.ol:hover span.ol-icon {
-background-color: #151515;  
-}
-
-.a-description-1{
-color:black;
-}
-
 @media screen and (max-width: 100px){
-/*#break{
-display:none;
-}*/
+
 .black-rectangle{
 display:none;
 }
@@ -86,6 +57,34 @@ top:470px;
 left:7%;
 }
 
+    
+a#ol span#ol-text {
+    display: inline-block; 
+    color: #fff;   
+    background-color: #151515;  
+}
+
+a#ol span#ol-icon {
+    background-color: #d5966c;  
+}
+
+a#ol:hover span {
+    transition-property: background-color;
+    transition-duration: 200ms;  
+}
+
+a#ol:hover span#ol-text {
+    background-color: #d5966c;  
+}
+
+a#ol:hover span#ol-icon {
+background-color: #151515;  
+}
+
+.a-description-1{
+color:black;
+}
+
 }
 .picimage-1{
 width:100%;
@@ -119,36 +118,6 @@ width:75%;
 position:absolute;
 top:350px;
 left:6%;
-}
-
-a.ol span.ol-text {
-    display: inline-block; 
-    color: #fff;   
-    background-color: #151515;  
-}
-
-a.ol span.ol-icon {
-    background-color: #d5966c;  
-}
-
-a.ol:hover span {
-    transition-property: background-color; 
-    transition-duration: 200ms;  
-}
-
-a.ol:hover span.ol-text {
-    background-color: #d5966c;  
-}
-
-a.ol:hover span.ol-icon {
-background-color: #151515;  
-}
-
-
-
-
-.a-description-1{
-color:black;
 }
 
 @media  (max-width:680px) {
@@ -472,26 +441,27 @@ position:absolute;
 left:180px;
 }
 
-a.ol span.ol-text {
+
+a#ol span#ol-text {
     display: inline-block; 
     color: #fff;   
     background-color: #151515;  
 }
 
-a.ol span.ol-icon {
+a#ol span#ol-icon {
     background-color: #d5966c;  
 }
 
-a.ol:hover span {
-    transition-property: background-color; 
+a#ol:hover span {
+    transition-property: background-color;
     transition-duration: 200ms;  
 }
 
-a.ol:hover span.ol-text {
+a#ol:hover span#ol-text {
     background-color: #d5966c;  
 }
 
-a.ol:hover span.ol-icon {
+a#ol:hover span#ol-icon {
 background-color: #151515;  
 }
 
