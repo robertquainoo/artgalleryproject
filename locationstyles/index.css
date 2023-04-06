@@ -11,7 +11,7 @@ body{
 
 .bth{
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 70px;
   border: none;
   color: #ffffff;
   display: grid;
@@ -84,6 +84,29 @@ body{
   flex-direction: column;
   gap: 16px;
 }
+@media (min-width: 1000px){
+  
+  .address > div > article{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position:relative;
+    right:14%;
+  }
+}
+
+@media (min-width: 1300px){
+  
+  .address > div > article{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position:relative;
+    right:11%;
+  }
+}
+
+
 
 .address > div > article > p:last-of-type{
   max-width: 28ch;
@@ -133,12 +156,13 @@ body{
   flex-direction: column;
   gap: 40px;
   /* padding: 48px; */
-  padding-block: 64px ;
+  padding-block: 64px ; 
 }
 
 .footer-section > ul{
   display: flex;
   gap: 32px;
+  padding: 0 -10px 0 20px;
 }
 
 .footer-section > ul > li > a > img{
@@ -464,6 +488,7 @@ select {
   .container{
     padding-inline: 20px;
   }*/
+  
 
 .footer-section {
     display: flex;
@@ -472,7 +497,7 @@ select {
  padding-inline: 80em;
   margin-inline: auto;
   max-width: 80rem;
-*/
+
 }
 
 

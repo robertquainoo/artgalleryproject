@@ -1,8 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap');
 
 
-@media screen and (max-width: 100px){
+@media screen and (min-width: 800px) and (max-width: 860px){
+    .location-description-2{
+        text-transform:uppercase;
+        width:25%;
+        height:45px;
+        font-size:25px;
+        color:white;
+        background-color:black;
+        text-align:center;
+        font-family:'Big Shoulders Display';
+        top:563px;
+        left:405px;
+        position:absolute;
+        }
+    
+        .p-description-2{
+            font-family:'Outfit';
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 1.2;
+            text-align:justify;
+            color:#444444;
+            bottom:700px;
+            left:400px;
+            position:absolute;
+            width:310px;
+            }
+            
+    }
 
+
+a.ol span.ol-text {
+    display: inline-block; 
+    color: #fff;   
+    background-color: #151515;  
+}
+
+a.ol span.ol-icon {
+    background-color: #d5966c;  
+}
+
+a.ol:hover span {
+    transition-property: background-color; 
+    transition-duration: 200ms;  
+}
+
+a.ol:hover span.ol-text {
+    background-color: #d5966c;  
+}
+
+a.ol:hover span.ol-icon {
+background-color: #151515;  
+}
+
+.a-description-1{
+color:black;
+}
+
+@media screen and (max-width: 100px){
+/*#break{
+display:none;
+}*/
 .black-rectangle{
 display:none;
 }
@@ -29,10 +89,6 @@ position:relative;
 }
 
 @media  (max-width:680px) {
-    
-main{
-    margin:-4px;  
-      }    
 .arrow-right-1 {
 width:9px;
 height:27px;
@@ -61,40 +117,14 @@ top:470px;
 left:7%;
 }
 
-    
-a#ol span#ol-text {
-    display: inline-block; 
-    color: #fff;   
-    background-color: #151515;  
-}
-
-a#ol span#ol-icon {
-    background-color: #d5966c;  
-}
-
-a#ol:hover span {
-    transition-property: background-color;
-    transition-duration: 200ms;  
-}
-
-a#ol:hover span#ol-text {
-    background-color: #d5966c;  
-}
-
-a#ol:hover span#ol-icon {
-background-color: #151515;  
-}
-
-.a-description-1{
-color:black;
-}
-
 }
 .picimage-1{
 width:100%;
 height:230px;
 padding:0px;
-margin:0px;
+position: absolute;
+left:0%;
+top: 0%;
 }
 
 .m-ag{
@@ -106,61 +136,94 @@ text-transform:uppercase;
 color:black;
 text-align:justify;
 font-weight:900;
-bottom:5px;
-left:2%;
-position:relative;
+top:115px;
+left:5%;
+position:absolute;
 }
 
 .p-description-1{
 font-family:'Outfit';
 font-weight: 300;
-font-size: 16px;
+font-size: 18px;
 line-height: 1.3;
 text-align:justify;
 color:#444444;
-width:75%;
+width:85%;
 position:absolute;
 top:350px;
 left:6%;
 }
 
+a.ol span.ol-text {
+    display: inline-block; 
+    color: #fff;   
+    background-color: #151515;  
+}
+
+a.ol span.ol-icon {
+    background-color: #d5966c;  
+}
+
+a.ol:hover span {
+    transition-property: background-color; 
+    transition-duration: 200ms;  
+}
+
+a.ol:hover span.ol-text {
+    background-color: #d5966c;  
+}
+
+a.ol:hover span.ol-icon {
+background-color: #151515;  
+}
+
+
+
+
+.a-description-1{
+color:black;
+}
+
 @media  (max-width:680px) {
+
     .img-two-description {
-width:90%;
+width:85%;
 height:300px;
 position: absolute;
-top:580px;
+top:600px;
+left: 7%;
 }
 
 .img-three-description{
-    width:100%;
-    height:500px;
-    position: relative;
-    top: 500px;
+    width:85%;
+    height:455px;
+    position: absolute;
+    top:1150px;
+left: 7%;
     }
     
 .img-four-description{
-    width:100%;
+    width:85%;
     height:200px;
-    padding:20px 0px 20px 0px;
-    position: relative;
-    top: 520px;
+    left: 7%;
+    position: absolute;
+    top: 1620px;
     }
 
     .your-datg-1
 {
         white-space: nowrap; 
         font-family:'Big Shoulders Display';
-        font-size:50px;
+        font-size:40px;
         line-height:1;
         text-transform:uppercase;
         color:black;
         text-align:justify;
-        padding:10px 0px 0px 10px;
         margin:0px;
         font-weight:900;
-        position: relative;
-        top:500px;
+        position: absolute;
+        top:920px;
+        left: 7%;
         }
     }
 
@@ -168,9 +231,9 @@ top:580px;
         width:100%;
         background-color:black;
         height:350px;
-        margin:100px 0px 0px 0px;
-        position: relative;
-        top: 560px;
+        left: 0%;
+        position: absolute;
+        top: 2250px;
         }
 
 .p-two-description-1{
@@ -182,19 +245,21 @@ text-align:justify;
 left:8px;
 color:#444444;
 width:80%;
-right:70px;
-top: 500px;
-position:relative;
+top:1000px;
+left: 8%;
+position:absolute;
+text-align: inherit;
 }
 
 
 .article-description{
-width:100%;
+width:85%;
 height:300px;
 background-color:black;
 color:white;
-position: relative;
-top: 570px;
+position: absolute;
+top: 1850px;
+left: 7%;
 }
 
 .come-be-1{
@@ -253,31 +318,34 @@ background-color:#d5966c;
 @media screen and (min-width: 700px) and (max-width:950px) {
 
 .picimage-2{
-width:60%;
-height:700px;
+width:61%;
+height:720px;
 padding:0px;
 margin:0px;
+position: absolute;
+left:0%;
+top: 0%;
 }
 
 .m-ag{
 white-space: nowrap; 
 font-family:'Big Shoulders Display';
-font-size:77px;
+font-size:71px;
 line-height:1;
 text-transform:uppercase;
 color:black;
 text-align:justify;
-bottom:290px;
-left:185px;
+bottom:350px;
+left:197px;
 margin:0px;
 font-weight:900;
-position:relative;
+position:absolute;
 }
 
 .p-description-2{
 font-family:'Outfit';
 font-weight: 300;
-font-size: 20px;
+font-size: 17px;
 line-height: 1.2;
 text-align:justify;
 color:#444444;
@@ -315,8 +383,8 @@ position:absolute;
 }
 
 .img-two-description {
-width:55%;
-height:400px;
+width:50%;
+height:370px;
 position:absolute;
 left:44%;
 top:775px;
@@ -326,7 +394,7 @@ top:775px;
 {
 
 font-family:'Big Shoulders Display';
-font-size:35px;
+font-size:30px;
 line-height:1;
 text-transform:uppercase;
 color:black;
@@ -334,7 +402,7 @@ font-weight:900;
 top:780px;
 position:absolute;
 height:150px;
-left:7%;
+left:5%;
 }
 
 .next-line-desktop{
@@ -344,43 +412,44 @@ display:none;
 .p-two-description-2{
 font-family:'Outfit';
 font-weight: 300;
-font-size: 20px;
+font-size: 17px;
 line-height: 1.2;
 text-align:justify;
 color:#444444;
 width:220px;
 top:940px;
 position:absolute;
-left:7%;
+left:5%;
 }
 
 .img-three-description{
 width:49%;
-height:700px;
-top:1255px;
+height:670px;
+top:1180px;
 position:absolute;
+left: 5%;
 }
 
 .img-four-description{
-width:46%;
-height:335px;
-top:1240px;
-right:8px;
+width:39%;
+height:300px;
+top:1180px;
+right:45px;
 position:absolute;
 }
 .article-description{
-width:46%;
-height:338px;
+width:39%;
+height:355px;
 background-color:black;
 color:white;
-top:1615px;
-left:53%;
+top:1495px;
+left:55.5%;
 position:absolute;
 }
 
 .come-be-2{
 font-family:'Big Shoulders Display';
-font-size:60px;
+font-size:52px;
 line-height:1;
 text-transform:uppercase;
 text-align:justify;
@@ -391,7 +460,7 @@ font-weight:900;
 .we-are-excited-2 {
 font-family:'Outfit';
 font-weight: 300;
-font-size: 22px;
+font-size: 20px;
 line-height:1.3;
 text-align:justify;
 padding:10px 30px 20px 30px;
@@ -403,17 +472,18 @@ position:relative;
 .footer {
 width:100%;
 background-color:black;
-height:250px;
+height:230px;
 position:absolute;
 display:flex;
-top:2000px;
+top:1900px;
+left: 0%;
 }
  
 .faviconimages{
 display:flex;
 gap:23px;
 position:absolute;
-bottom:40px;
+bottom:30px;
 right:40px;
 height:100px;
 }
@@ -421,12 +491,13 @@ height:100px;
 .mag-down-description
 {
 color:white;
-font-size:33px;
+font-size:28px;
 text-transform:uppercase;
 font-family:'Big Shoulders Display';
 text-align:justify;
-bottom:80px;
+bottom:70px;
 position:absolute;
+left: 3%;
 }
 
 main{
@@ -435,7 +506,7 @@ margin:10px;
 .p-down-description{
 color:white;
 font-weight:300;
-font-size: 20px;
+font-size: 17px;
 font-family:'Outfit';
 text-align:justify;
 line-height:1.3;
@@ -445,27 +516,26 @@ position:absolute;
 left:180px;
 }
 
-
-a#ol span#ol-text {
+a.ol span.ol-text {
     display: inline-block; 
     color: #fff;   
     background-color: #151515;  
 }
 
-a#ol span#ol-icon {
+a.ol span.ol-icon {
     background-color: #d5966c;  
 }
 
-a#ol:hover span {
-    transition-property: background-color;
+a.ol:hover span {
+    transition-property: background-color; 
     transition-duration: 200ms;  
 }
 
-a#ol:hover span#ol-text {
+a.ol:hover span.ol-text {
     background-color: #d5966c;  
 }
 
-a#ol:hover span#ol-icon {
+a.ol:hover span.ol-icon {
 background-color: #151515;  
 }
 
@@ -476,30 +546,32 @@ color:black;
 
 }
 
-
 @media screen and (min-width: 1000px) {
 
+
+
 .picimage-3 {
-max-width:30%;
-height:500px;
-left:22%; 
-position:relative;
+width:33%;
+height:530px;
+left:27%; 
+position:absolute;
+top: -2px;
 }
 
 .black-rectangle{
 bottom:98px;
 position:absolute;
-width:23%;
-height: 500px;
-margin:0 0 0 0;
+width:28%;
+height: 532px;
+left: 0.1%;
 background-color:#151515;
-top: 8px;
+top: -5.5px;
 }
 
 .black-rectangle h1{
 position: absolute;
 color:white;
-top: 19%;
+top: 13%;
 left:50%;
 font-size: 50px;
 line-height: 1;
@@ -511,23 +583,20 @@ mix-blend-mode: difference;
 .p-description-3{
 font-family:'Outfit';
 font-weight: 300;
-font-size: 18px;
+font-size: 19px;
 line-height: 1.2;
 color:#444444;
-left:48%;
+left:54%;
 position:absolute;
-width:290px;
-top:124px;
+width:310px;
+top:90px;
 text-align:initial;
 }
 
-*{
-margin:5px 0 0 0px;
-}
 
-main{
-margin:0px 30px 30px 0;
-}
+/*main{
+margin:0px 0px 0px 0;
+}*/
 
 /*#break{
 display:none;
@@ -552,8 +621,8 @@ text-align:center;
 font-family:'Big Shoulders Display';
 padding:9px 0 0px 0;
 position:absolute;
-top:355px;
-right:570px;
+top:335px;
+right:353px;
 }
 
 .flex-wrap
@@ -575,25 +644,25 @@ width:20px;
 height:28.7px;
 background-color:#D5966C;
 padding:5px 0 3px 4px;
-bottom:-397px;
-right:560px;
+bottom:-371.5px;
+right:335px;
 position:absolute;
 }
 
 
 .img-two-description {
-width:41%;
-height:350px;
+width:38%;
+height:330px;
 position:absolute;
-top:540px;
-left:37%;
+top:620px;
+left:45%;
 }
 
 #your-datg-3
 {
 
 font-family:'Big Shoulders Display';
-font-size:20px;
+font-size:30px;
 line-height: 1.5em;
 height: 5em;    
 text-transform:uppercase;
@@ -601,25 +670,27 @@ color:black;
 font-weight:900;
 top:635px;
 display: flex;
-width:150px;
+width:200px;
 height:80px;
 text-align:inherit;
-left:110px;
+left:145px;
 position:absolute;
 }
+
+
 
 
 
 .p-two-description-3{
 font-family:'Outfit';
 font-weight: 300;
-font-size: 16px;
+font-size: 19px;
 line-height: 1.3;
 text-align:initial;
 color:#444444;
 width:250px;
-top:750px;
-left:7.5%;
+top:760px;
+left:14.5%;
 position:absolute;
 }
 
@@ -629,27 +700,27 @@ margin:-300px 0 70px 0;
 } */
 
 .img-three-description{
-top:980px;
+top:990px;
 width:37%;
-left:7.2%;
+left:14.5%;
 height:650px;
 position:absolute;
 }
 
 .img-four-description{
-width:33%;
-height:280px;
-top:960px;
-right:21.3%;
+width:30%;
+height:275px;
+top:990px;
+right:17%;
 position:absolute;
 }
 .article-description{
-width:33%;
-height:350px;
+width:30%;
+height:340px;
 background-color:black;
 color:white;
-top:1278px;
-left:45.8%;
+top:1298px;
+left:53%;
 position:absolute;
 }
 
@@ -679,16 +750,15 @@ bottom:20px;
 width:100%;
 background-color:black;
 top:1670px;
-height:200px;
+height:160px;
 position:absolute;
 }
  
 .faviconimages{
 display:flex;
-gap:23px;
-top:20px;
-left:80%;
-height:100px;
+gap:20px;
+left:68%;
+height:40px;
 position:absolute;
 }
 
@@ -696,20 +766,20 @@ position:absolute;
 {
 color:white;
 /*padding:35px 0 10px 150px;*/
-font-size:27px;
+font-size:25px;
 text-transform:uppercase;
 font-family:'Big Shoulders Display';
 position:absolute;
 text-align:justify;
-left:3%;
-bottom:60px;
+left:11.2%;
+bottom:25px;
 }
 
 
 .p-down-description{
 color:white;
 font-weight:300;
-font-size: 17px;
+font-size: 14px;
 font-family:'Outfit';
 text-align:justify;
 line-height:1.3;
@@ -717,9 +787,9 @@ width:300px;
 /*margin:-250px 0 0 0;*/
 position:absolute;
 text-align:initial;
-left:35%;/*left:20px;*/
+left:29%;/*left:20px;*/
 
-bottom:30px;
+bottom:45px;
 
 }
 
@@ -752,3 +822,279 @@ color:black;
 }
 
 }
+
+
+@media screen and (min-width: 1350px) {
+
+
+
+    .picimage-3 {
+    width:37%;
+    height:550px;
+    left:31.5%; 
+    position:absolute;
+    top: -2px;
+    }
+    
+    .black-rectangle{
+    bottom:98px;
+    position:absolute;
+    width:32%;
+    height: 552px;
+    left: 0.1%;
+    background-color:#151515;
+    top: -5.5px;
+    }
+    
+    .black-rectangle h1{
+    position: absolute;
+    color:white;
+    top: 10%;
+    left:52%;
+    font-size: 70px;
+    line-height: 1;
+    mix-blend-mode: difference;
+    }
+    
+    
+    .p-description-3{
+    font-family:'Outfit';
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 1.2;
+    color:#444444;
+    left:65%;
+    position:absolute;
+    width:310px;
+    top:90px;
+    text-align:initial;
+    }
+    
+    
+    /*main{
+    margin:0px 0px 0px 0;
+    }*/
+    
+    /*#break{
+    display:none;
+    }*/
+    
+    /*.next-line-desktop{
+    display:none;
+    }*/
+    
+    .no-next-line-desktop{
+    display:none;
+    }
+    
+    .location-description-3{
+    text-transform:uppercase;
+    width:115px;
+    height:28px;
+    font-size:12px;
+    color:white;
+    background-color:black;
+    text-align:center;
+    font-family:'Big Shoulders Display';
+    padding:9px 0 0px 0;
+    position:absolute;
+    top:335px;
+    right:355px;
+    }
+    
+    .flex-wrap
+    {
+    display:block;
+    position:absolute;
+    top:-75px;
+    right:0%;
+    
+    }
+    .location-button{
+    display: flex;
+    position:absolute;
+    white-space:nowrap;
+    }
+    
+    .arrow-right-3{
+    width:20px;
+    height:28.7px;
+    background-color:#D5966C;
+    padding:5px 0 3px 4px;
+    bottom:-371.5px;
+    right:338px;
+    position:absolute;
+    }
+    
+    
+    .img-two-description {
+    width:42%;
+    height:330px;
+    position:absolute;
+    top:640px;
+    left:44%;
+    }
+    
+    #your-datg-3
+    {
+    
+    font-family:'Big Shoulders Display';
+    font-size:35px;
+    line-height: 1.5em;
+    height: 5em;    
+    text-transform:uppercase;
+    color:black;
+    font-weight:900;
+    top:635px;
+    display: flex;
+    width:250px;
+    height:80px;
+    text-align:inherit;
+    left:230px;
+    position:absolute;
+    }
+    
+    
+    
+    
+    
+    .p-two-description-3{
+    font-family:'Outfit';
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.3;
+    text-align:initial;
+    color:#444444;
+    width:250px;
+    top:780px;
+    left:17.5%;
+    position:absolute;
+    }
+    
+    /*.image-description{
+    margin:-300px 0 70px 0;
+    
+    } */
+    
+    .img-three-description{
+    top:990px;
+    width:37%;
+    left:17.5%;
+    height:650px;
+    position:absolute;
+    }
+    
+    .img-four-description{
+    width:30%;
+    height:275px;
+    top:990px;
+    right:14%;
+    position:absolute;
+    }
+    .article-description{
+    width:30%;
+    height:340px;
+    background-color:black;
+    color:white;
+    top:1298px;
+    left:56%;
+    position:absolute;
+    }
+    
+    .come-be-3{
+    font-family:'Big Shoulders Display';
+    font-size:40px;
+    line-height:1;
+    text-transform:uppercase;
+    text-align:justify;
+    padding:55px 0px 0px 40px;
+    font-weight:900;
+    }
+    
+    .we-are-excited-3 {
+    font-family:'Outfit';
+    font-weight: 300;
+    font-size: 15px;
+    line-height:1.3;
+    text-align:initial;
+    padding:20px 50px 40px 40px;
+    color:rgb(255, 255, 255);
+    bottom:20px;
+    
+    }
+    
+    .footer {
+    width:100%;
+    background-color:black;
+    top:1670px;
+    height:160px;
+    position:absolute;
+    }
+     
+    .faviconimages{
+    display:flex;
+    gap:20px;
+    left:75%;
+    height:40px;
+    position:absolute;
+    }
+    
+    .mag-down-description
+    {
+    color:white;
+    /*padding:35px 0 10px 150px;*/
+    font-size:25px;
+    text-transform:uppercase;
+    font-family:'Big Shoulders Display';
+    position:absolute;
+    text-align:justify;
+    left:15.5%;
+    bottom:25px;
+    }
+    
+    
+    .p-down-description{
+    color:white;
+    font-weight:300;
+    font-size: 14px;
+    font-family:'Outfit';
+    text-align:justify;
+    line-height:1.3;
+    width:300px;
+    /*margin:-250px 0 0 0;*/
+    position:absolute;
+    text-align:initial;
+    left:38%;/*left:20px;*/
+    bottom:45px;
+    
+    }
+    
+    
+    a#ol span#ol-text {
+        display: inline-block; 
+        color: #fff;   
+        background-color: #151515;  
+    }
+    
+    a#ol span#ol-icon {
+        background-color: #d5966c;  
+    }
+    
+    a#ol:hover span {
+        transition-property: background-color;
+        transition-duration: 200ms;  
+    }
+    
+    a#ol:hover span#ol-text {
+        background-color: #d5966c;  
+    }
+    
+    a#ol:hover span#ol-icon {
+    background-color: #151515;  
+    }
+    
+    .a-description-1{
+    color:black;
+    }
+    
+    }
