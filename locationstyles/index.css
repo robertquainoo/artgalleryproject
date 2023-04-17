@@ -23,6 +23,27 @@ body{
   letter-spacing: 1.5px;
 }
 
+@media  screen and (max-width:590px) {
+  
+
+.bth{
+  padding: 0;
+  margin: 0 0 0 0px;
+  border: none;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+  width: fit-content;
+  letter-spacing: 1.5px;
+}
+
+}
+
+
+
 .rev{
   grid-template-columns: 0.3fr 1fr;
 }
@@ -170,7 +191,7 @@ body{
 }
 
 .footer-section > ul > li:hover > a > img{
-  filter: brightness(300%) !important;
+  filter: brightness(100%) !important;
 }
 
 .footer-section  > p {
